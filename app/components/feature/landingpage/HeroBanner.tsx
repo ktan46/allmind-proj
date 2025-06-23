@@ -21,13 +21,13 @@ export default function HeroBanner({
       <div className="absolute inset-0 bg-black/40 backdrop-blur-sm">
         <div className="relative z-10 max-w-4xl mx-auto py-64 text-white">
           <h1 className="text-2xl md:text-7xl font-bold mb-4">{title}</h1>
-          <h2 className="text-xl mb-6">{subtitle}</h2>
+          <h2 className="text-2xl mb-6">{subtitle}</h2>
           <div className="mb-10">
             <BaseButton>{buttonName}</BaseButton>
           </div>
           <h3 className="text-gray-300">{bannerDescription}</h3>
           {scrollingBanner && (
-            <div className="overflow-hidden mt-8">{scrollingBanner}</div>
+            <div className="overflow-hidden mt-5">{scrollingBanner}</div>
           )}
         </div>
       </div>
